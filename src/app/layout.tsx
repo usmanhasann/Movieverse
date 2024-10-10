@@ -8,7 +8,6 @@ import "../styles/theme.css";
 import Sidebar from "@/components/sidebar/sidebar";
 import Providers from "./providers";
 import ThemeSwitch from "@/components/panel/ThemeSwitch";
-import FolioProBanner from "@/components/banner/folio-pro";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,17 +26,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          {/* Use this for your site */}
-          {/* <ThemeSwitch />
+          <ThemeSwitch />
           <Sidebar />
-          {children} */}
-          {/* Temporary for Banner */}
-          <FolioProBanner />
-          <div className="temp-layout">
-            <ThemeSwitch />
-            <Sidebar />
-            {children}
-          </div>
+          {children}
         </Providers>
         <Analytics />
       </body>
