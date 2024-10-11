@@ -16,7 +16,7 @@ const Blog: NextPage = () => {
               <div className="blog-item-inner shadow-dark">
                 <div className="blog-img">
                   <img src="/imgs/blog/1.jpg" alt="Responsive Web Design" />
-                  <div className="blog-date">June 4, 2020</div>
+                  <div className="blog-date">September 1, 2022</div>
                 </div>
                 <div className="blog-info">
                   <h4 className="blog-title">
@@ -28,8 +28,17 @@ const Blog: NextPage = () => {
                     techniques behind creating websites that adapt seamlessly to
                     various devices and screen sizes.
                   </p>
-                  <p className="blog-tags">
-                    Tags: <a href="#">HTML</a>, <a href="#">CSS</a>
+                  <p
+                    className="blog-tags"
+                    style={{ display: "flex", flexWrap: "wrap", gap: "2px" }}
+                  >
+                    Tags: <a href="#">HTML</a>, <a href="#">CSS</a>,
+                    <a href="#">Responsive Design</a>,
+                    <a href="#">Media Queries</a>, <a href="#">Flexbox</a>,
+                    <a href="#">Grid</a>, <a href="#">Mobile-First</a>,
+                    <a href="#">Tailwind</a>,<a href="#">Bootstrap</a>,
+                    <a href="#">Material UI</a>,
+                    <a href="#"> Web Design Best Practices</a>.
                   </p>
                 </div>
               </div>
@@ -40,7 +49,7 @@ const Blog: NextPage = () => {
               <div className="blog-item-inner shadow-dark">
                 <div className="blog-img">
                   <img src="/imgs/blog/2.jpg" alt="Creative Slideshow" />
-                  <div className="blog-date">June 4, 2020</div>
+                  <div className="blog-date">September 1, 2022</div>
                 </div>
                 <div className="blog-info">
                   <h4 className="blog-title">
@@ -52,8 +61,17 @@ const Blog: NextPage = () => {
                     transitions, this blog post explores the art of crafting
                     memorable slideshows for your website.
                   </p>
-                  <p className="blog-tags">
-                    Tags: <a href="#">HTML</a>, <a href="#">CSS</a>
+                  <p
+                    className="blog-tags"
+                    style={{ display: "flex", flexWrap: "wrap", gap: "2px" }}
+                  >
+                    Tags: <a href="#">HTML</a>,<a href="#">CSS</a>,
+                    <a href="#">JavaScript</a>,<a href="#">Animations</a>,
+                    <a href="#">Transitions</a>,<a href="#">jQuery</a>,
+                    <a href="#">Carousel</a>,<a href="#">Web Design</a>,
+                    <a href="#">User Interaction</a>,
+                    <a href="#">Slideshow Plugins</a>,
+                    <a href="#">Responsive Design</a>.
                   </p>
                 </div>
               </div>
@@ -64,7 +82,7 @@ const Blog: NextPage = () => {
               <div className="blog-item-inner shadow-dark">
                 <div className="blog-img">
                   <img src="/imgs/blog/3.jpg" alt="Image Gallery Lightbox" />
-                  <div className="blog-date">June 4, 2020</div>
+                  <div className="blog-date">September 1, 2022</div>
                 </div>
                 <div className="blog-info">
                   <h4 className="blog-title">
@@ -76,8 +94,15 @@ const Blog: NextPage = () => {
                     experience to showcasing your visual content in style, this
                     blog post sheds light on this valuable web design feature.
                   </p>
-                  <p className="blog-tags">
-                    Tags: <a href="#">HTML</a>, <a href="#">CSS</a>
+                  <p
+                    className="blog-tags"
+                    style={{ display: "flex", flexWrap: "wrap", gap: "2px" }}
+                  >
+                    Tags: <a href="#">HTML</a>,<a href="#">CSS</a>,
+                    <a href="#">JavaScript</a>,<a href="#">Lightbox</a>,
+                    <a href="#">Modal</a>,<a href="#"> Image Optimization</a>,
+                    <a href="#">User Experience (UX)</a>,
+                    <a href="#">Gallery Design</a>,<a href="#">Web Design</a>.
                   </p>
                 </div>
               </div>

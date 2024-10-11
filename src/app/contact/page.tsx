@@ -1,6 +1,48 @@
+"use client";
 import type { NextPage } from "next";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact: NextPage = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Log the form data before sending
+    if (form.current) {
+      const formData = new FormData(form.current);
+      const data = {
+        name: formData.get("user_name"),
+        email: formData.get("user_email"),
+        subject: formData.get("subject"),
+        message: formData.get("message"),
+      };
+      console.log("Form Data Sent:", data);
+    }
+
+    // Sending email via EmailJS
+    emailjs
+      .sendForm(
+        "service_fbht85v", // Replace with your EmailJS service ID
+        "template_7jlw5vy", // Replace with your EmailJS template ID
+        form.current as HTMLFormElement,
+        "UbAZvhnQ-ALH33t8r" // Replace with your EmailJS user ID (Public Key)
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          // Reset form after successful submission
+          if (form.current) form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send the message, please try again.");
+        }
+      );
+  };
+
   return (
     <>
       <section className="contact section" id="contact">
@@ -11,37 +53,36 @@ const Contact: NextPage = () => {
             </div>
           </div>
           <div className="row">
-            {/* contact-info-item */}
+            {/* Contact Info Items */}
             <div className="contact-info-item padd-15">
               <div className="icon">
                 <i className="fa fa-map-marker" />
               </div>
               <h4>Address</h4>
-              <p>Your Address, City</p>
+              <p>Lahore, Pakistan</p>
             </div>
-            {/* contact-info-item Ended */}
-            {/* contact-info-item */}
             <div className="contact-info-item padd-15">
               <div className="icon">
                 <i className="fa fa-phone" />
               </div>
               <h4>Call Us On</h4>
-              <p>+99 **********</p>
+              <p>+92 3116458165</p>
             </div>
-            {/* contact-info-item Ended */}
-            {/* contact-info-item */}
             <div className="contact-info-item padd-15">
               <div className="icon">
                 <i className="fa fa-envelope" />
               </div>
               <h4>Email</h4>
-              <p>your@email.com</p>
+              <p>coder.mobeen@email.com</p>
             </div>
-            {/* contact-info-item Ended */}
           </div>
           {/* Contact Form */}
           <div className="row">
-            <form className="contact-form padd-15">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="contact-form padd-15"
+            >
               <div className="row">
                 <div className="form-item col-6 padd-15">
                   <div className="form-group">
@@ -49,6 +90,8 @@ const Contact: NextPage = () => {
                       type="text"
                       className="form-control"
                       placeholder="Name*"
+                      name="user_name"
+                      required
                     />
                   </div>
                 </div>
@@ -58,6 +101,8 @@ const Contact: NextPage = () => {
                       type="email"
                       className="form-control"
                       placeholder="Email*"
+                      name="user_email"
+                      required
                     />
                   </div>
                 </div>
@@ -69,6 +114,8 @@ const Contact: NextPage = () => {
                       type="text"
                       className="form-control"
                       placeholder="Subject*"
+                      name="subject"
+                      required
                     />
                   </div>
                 </div>
@@ -79,7 +126,8 @@ const Contact: NextPage = () => {
                     <textarea
                       className="form-control"
                       placeholder="Your Message*"
-                      defaultValue={""}
+                      name="message"
+                      required
                     />
                   </div>
                 </div>
@@ -93,7 +141,6 @@ const Contact: NextPage = () => {
               </div>
             </form>
           </div>
-          {/* Contact Form Ended */}
         </div>
       </section>
     </>
