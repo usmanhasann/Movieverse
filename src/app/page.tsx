@@ -1,3 +1,4 @@
+/* eslint-disable react/no-string-refs */
 /* eslint-disable @next/next/no-img-element */
 
 export default async function Home() {

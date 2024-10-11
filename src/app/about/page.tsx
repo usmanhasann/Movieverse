@@ -74,6 +74,24 @@ const About: NextPage = () => {
                 </div>
 
                 <div className="skills padd-15">
+                  <div
+                    className="skill-item padd-15"
+                    style={{
+                      // backgroundColor: "#2196f3",
+                      padding: "0px 0 10px 0",
+                      borderRadius: "50px",
+                    }}
+                  >
+                    <h5
+                      style={{
+                        fontSize: "24px",
+                        fontWeight: "700",
+                        lineHeight: "36px",
+                      }}
+                    >
+                      Skills
+                    </h5>
+                  </div>
                   <div className="new-style-for-skills">
                     <div
                       className="skill-item padd-15"

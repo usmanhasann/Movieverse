@@ -64,7 +64,7 @@ const Portfolio: NextPage = () => {
                   <img src="/imgs/portfolio/pricebook.png" alt="portfolio" />
                 </div>
                 <div className="portfolio-info">
-                  <h4>PriceBook</h4>
+                  <h4>PriceBook HomeOwner</h4>
                   <div className="icon">
                     <i className="fa fa-search" />
                   </div>
@@ -94,10 +94,13 @@ const Portfolio: NextPage = () => {
             <div className="portfolio-item padd-15" data-category="wordpress">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/5.jpg" alt="portfolio" />
+                  <img
+                    src="/imgs/portfolio/pricebook-cont.png"
+                    alt="portfolio"
+                  />
                 </div>
                 <div className="portfolio-info">
-                  <h4>Dreams Project</h4>
+                  <h4>PriceBook Contractors</h4>
                   <div className="icon">
                     <i className="fa fa-search" />
                   </div>
@@ -109,10 +112,39 @@ const Portfolio: NextPage = () => {
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/6.jpg" alt="portfolio" />
+                  <img
+                    src="/imgs/portfolio/Pricebook-admin.png"
+                    alt="portfolio"
+                  />
                 </div>
                 <div className="portfolio-info">
-                  <h4>Cuda Project</h4>
+                  <h4>PriceBook Admin</h4>
+                  <div className="icon">
+                    <i className="fa fa-search" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="portfolio-item padd-15" data-category="web-design">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
+                  <img src="/imgs/portfolio/grill-2.png" alt="portfolio" />
+                </div>
+                <div className="portfolio-info">
+                  <h4>Grilli Master</h4>
+                  <div className="icon">
+                    <i className="fa fa-search" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="portfolio-item padd-15" data-category="web-design">
+              <div className="portfolio-item-inner shadow-dark">
+                <div className="portfolio-img">
+                  <img src="/imgs/portfolio/Subway.png" alt="portfolio" />
+                </div>
+                <div className="portfolio-info">
+                  <h4>Subway Project</h4>
                   <div className="icon">
                     <i className="fa fa-search" />
                   </div>
