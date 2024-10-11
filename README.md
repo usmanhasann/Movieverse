@@ -5,7 +5,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/alsiam/urFolio)](https://github.com/alsiam/urFolio/issues)
 [![GitHub forks](https://img.shields.io/github/forks/alsiam/urFolio)](https://github.com/alsiam/urFolio/network)
 
-A free and open-source portfolio template for developers, now powered by Next.js. View the live demo: [urfolio.vercel.app](https://urfolio.vercel.app)
+A free and open-source portfolio template for developers, now powered by Next.js. View the live demo: [Mobeen.Next.app](https://mobeen-ahmad-portfolio.netlify.app/)
 
 ## Table of Contents
 
@@ -58,12 +58,7 @@ Contributions are welcome! Please check the [Contribution Guidelines](CONTRIBUTI
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgements
-
-- Thanks to [Open Source Initiative](https://opensource.org/) for their guidelines on open-source licensing.
-- Special thanks to [Vercel](https://vercel.com/) for providing free hosting for the live demo.
 
 ---
 
