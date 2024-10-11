@@ -10,6 +10,7 @@ import pricebookCont from "../../../public/imgs/portfolio/pricebook-cont.png";
 import PricebookAdmin from "../../../public/imgs/portfolio/Pricebook-admin.png";
 import Grill2img from "../../../public/imgs/portfolio/grill-2.png";
 import SubwayImg from "../../../public/imgs/portfolio/Subway.png";
+import PakItSystemImg from "../../../public/imgs/portfolio/PakItSystem img.png";
 
 const Portfolio: NextPage = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -41,7 +42,7 @@ const Portfolio: NextPage = () => {
     },
     {
       id: 5,
-      category: "wordpress",
+      category: "nextjs",
       title: "PriceBook Contractors",
       image: pricebookCont,
     },
@@ -62,6 +63,12 @@ const Portfolio: NextPage = () => {
       category: "web-design",
       title: "Subway Project",
       image: SubwayImg,
+    },
+    {
+      id: 9,
+      category: "nextjs", // Update category for PakItSystem
+      title: "PakItSystem",
+      image: PakItSystemImg,
     },
   ];
 
@@ -101,14 +108,15 @@ const Portfolio: NextPage = () => {
                 className={activeCategory === "web-design" ? "active" : ""}
                 onClick={() => setActiveCategory("web-design")}
               >
-                ReacT js
+                React.js
               </button>
+
               <button
                 type="button"
-                className={activeCategory === "wordpress" ? "active" : ""}
-                onClick={() => setActiveCategory("wordpress")}
+                className={activeCategory === "nextjs" ? "active" : ""}
+                onClick={() => setActiveCategory("nextjs")}
               >
-                Next Js
+                Next.js
               </button>
             </div>
           </div>
@@ -147,7 +155,7 @@ const Portfolio: NextPage = () => {
       <style jsx>{`
         .coming-soon {
           text-align: center;
-          color: #ff6347; /* or any other color you'd like */
+          color: #ff6347;
           font-style: italic;
           padding: 50px 0;
           background-color: #f0f0f0;
