@@ -12,9 +12,8 @@ import ThemeSwitch from "@/components/panel/ThemeSwitch";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Folio the best Portfolio or Personal Website",
-  description:
-    "Folio is the best portfolio or personal website for developer, creator or businessman.",
+  title: "Mobeen Ahmad | Personal Website",
+  description: "This is my Personal PortFolio Website.",
 };
 
 export default function RootLayout({

@@ -73,7 +73,11 @@ const Sidebar = () => {
         </ul>
         <div className="copyright">
           Created By{" "}
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/MobeenKhan221"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Mobeen Ahmad
           </a>
         </div>
