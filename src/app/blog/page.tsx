@@ -1,4 +1,70 @@
 import type { NextPage } from "next";
+import Image from "next/image";
+
+// Blog post data
+const blogPosts = [
+  {
+    id: 1,
+    title: "Mastering Responsive Web Design",
+    imgSrc: "/imgs/blog/1.jpg",
+    date: "September 1, 2022",
+    description:
+      "In today digital landscape, responsive web design is not just a trend; it is a necessity. Explore the principles and techniques behind creating websites that adapt seamlessly to various devices and screen sizes.",
+    tags: [
+      "HTML",
+      "CSS",
+      "Responsive Design",
+      "Media Queries",
+      "Flexbox",
+      "Grid",
+      "Mobile-First",
+      "Tailwind",
+      "Bootstrap",
+      "Material UI",
+      "Web Design Best Practices",
+    ],
+  },
+  {
+    id: 2,
+    title: "Unleashing Creativity with Slideshows",
+    imgSrc: "/imgs/blog/2.jpg",
+    date: "September 1, 2022",
+    description:
+      "Discover innovative ways to create captivating slideshows that engage your audience. From stunning visuals to seamless transitions, this blog post explores the art of crafting memorable slideshows for your website.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Animations",
+      "Transitions",
+      "jQuery",
+      "Carousel",
+      "Web Design",
+      "User Interaction",
+      "Slideshow Plugins",
+      "Responsive Design",
+    ],
+  },
+  {
+    id: 3,
+    title: "Enhancing User Experience with Image Gallery Lightboxes",
+    imgSrc: "/imgs/blog/3.jpg",
+    date: "September 1, 2022",
+    description:
+      "Explore the benefits of incorporating image gallery lightboxes into your website design. From improved user experience to showcasing your visual content in style, this blog post sheds light on this valuable web design feature.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Lightbox",
+      "Modal",
+      "Image Optimization",
+      "User Experience (UX)",
+      "Gallery Design",
+      "Web Design",
+    ],
+  },
+];
 
 const Blog: NextPage = () => {
   return (
@@ -11,103 +77,32 @@ const Blog: NextPage = () => {
             </div>
           </div>
           <div className="row">
-            {/* Blog Item 1 */}
-            <div className="blog-item padd-15">
-              <div className="blog-item-inner shadow-dark">
-                <div className="blog-img">
-                  <img src="/imgs/blog/1.jpg" alt="Responsive Web Design" />
-                  <div className="blog-date">September 1, 2022</div>
-                </div>
-                <div className="blog-info">
-                  <h4 className="blog-title">
-                    Mastering Responsive Web Design
-                  </h4>
-                  <p className="blog-description">
-                    In today digital landscape, responsive web design is not
-                    just a trend; it is a necessity. Explore the principles and
-                    techniques behind creating websites that adapt seamlessly to
-                    various devices and screen sizes.
-                  </p>
-                  <p
-                    className="blog-tags"
-                    style={{ display: "flex", flexWrap: "wrap", gap: "2px" }}
-                  >
-                    Tags: <a href="#">HTML</a>, <a href="#">CSS</a>,
-                    <a href="#">Responsive Design</a>,
-                    <a href="#">Media Queries</a>, <a href="#">Flexbox</a>,
-                    <a href="#">Grid</a>, <a href="#">Mobile-First</a>,
-                    <a href="#">Tailwind</a>,<a href="#">Bootstrap</a>,
-                    <a href="#">Material UI</a>,
-                    <a href="#"> Web Design Best Practices</a>.
-                  </p>
+            {blogPosts.map((post) => (
+              <div className="blog-item padd-15" key={post.id}>
+                <div className="blog-item-inner shadow-dark">
+                  <div className="blog-img">
+                    <Image src={post.imgSrc} alt={post.title} />
+                    <div className="blog-date">{post.date}</div>
+                  </div>
+                  <div className="blog-info">
+                    <h4 className="blog-title">{post.title}</h4>
+                    <p className="blog-description">{post.description}</p>
+                    <p
+                      className="blog-tags"
+                      style={{ display: "flex", flexWrap: "wrap", gap: "2px" }}
+                    >
+                      Tags:{" "}
+                      {post.tags.map((tag, index) => (
+                        <a href="#" key={index}>
+                          {tag}
+                          {index < post.tags.length - 1 ? ", " : ""}
+                        </a>
+                      ))}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            {/* Blog Item 1 End */}
-            {/* Blog Item 2 */}
-            <div className="blog-item padd-15">
-              <div className="blog-item-inner shadow-dark">
-                <div className="blog-img">
-                  <img src="/imgs/blog/2.jpg" alt="Creative Slideshow" />
-                  <div className="blog-date">September 1, 2022</div>
-                </div>
-                <div className="blog-info">
-                  <h4 className="blog-title">
-                    Unleashing Creativity with Slideshows
-                  </h4>
-                  <p className="blog-description">
-                    Discover innovative ways to create captivating slideshows
-                    that engage your audience. From stunning visuals to seamless
-                    transitions, this blog post explores the art of crafting
-                    memorable slideshows for your website.
-                  </p>
-                  <p
-                    className="blog-tags"
-                    style={{ display: "flex", flexWrap: "wrap", gap: "2px" }}
-                  >
-                    Tags: <a href="#">HTML</a>,<a href="#">CSS</a>,
-                    <a href="#">JavaScript</a>,<a href="#">Animations</a>,
-                    <a href="#">Transitions</a>,<a href="#">jQuery</a>,
-                    <a href="#">Carousel</a>,<a href="#">Web Design</a>,
-                    <a href="#">User Interaction</a>,
-                    <a href="#">Slideshow Plugins</a>,
-                    <a href="#">Responsive Design</a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Blog Item 2 End */}
-            {/* Blog Item 3 */}
-            <div className="blog-item padd-15">
-              <div className="blog-item-inner shadow-dark">
-                <div className="blog-img">
-                  <img src="/imgs/blog/3.jpg" alt="Image Gallery Lightbox" />
-                  <div className="blog-date">September 1, 2022</div>
-                </div>
-                <div className="blog-info">
-                  <h4 className="blog-title">
-                    Enhancing User Experience with Image Gallery Lightboxes
-                  </h4>
-                  <p className="blog-description">
-                    Explore the benefits of incorporating image gallery
-                    lightboxes into your website design. From improved user
-                    experience to showcasing your visual content in style, this
-                    blog post sheds light on this valuable web design feature.
-                  </p>
-                  <p
-                    className="blog-tags"
-                    style={{ display: "flex", flexWrap: "wrap", gap: "2px" }}
-                  >
-                    Tags: <a href="#">HTML</a>,<a href="#">CSS</a>,
-                    <a href="#">JavaScript</a>,<a href="#">Lightbox</a>,
-                    <a href="#">Modal</a>,<a href="#"> Image Optimization</a>,
-                    <a href="#">User Experience (UX)</a>,
-                    <a href="#">Gallery Design</a>,<a href="#">Web Design</a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Blog Item 3 End */}
+            ))}
           </div>
         </div>
       </section>
