@@ -1,65 +1,65 @@
-import killergame from "../../../public/assets/move (1).jpg";
-import HeavenandHell from "../../../public/assets/move (2).jpg";
-import Terrifier3 from "../../../public/assets/move (3).jpg";
-import Terrifier2 from "../../../public/assets/move (4).jpg";
-import TheCrow from "../../../public/assets/move (5).jpg";
-import ItEndswithUs from "../../../public/assets/move (6).jpg";
-import SpeakNoEvil from "../../../public/assets/move (7).jpg";
-import 탈출프로젝트사일런스 from "../../../public/assets/move (8).jpg";
-import KillemAll2 from "../../../public/assets/move (9).jpg";
+import killergame from "../../../public/assets/topratedSecCards (13).jpg";
+import HeavenandHell from "../../../public/assets/topratedSecCards (9).jpg";
+import Terrifier3 from "../../../public/assets/topratedSecCards (5).jpg";
+import Terrifier2 from "../../../public/assets/topratedSecCards (10).jpg";
+import ForrestGump from "../../../public/assets/topratedSecCards (1).jpg";
+import TheGreenMile from "../../../public/assets/topratedSecCards (16).jpg";
+import Thegoodbadugly from "../../../public/assets/topratedSecCards (2).jpg";
+import ShindlerList from "../../../public/assets/topratedSecCards (11).jpg";
+import SevenSamrai from "../../../public/assets/topratedSecCards (15).jpg";
 export  const topRatedMovies = [
   {
     id: 1,
     category: "web-movie",
-    title: "Killer Game",
+    title: "The Godfather ",
     image: killergame,
   },
   {
     id: 2,
     category: "web-movie",
-    title: "Heaven'nd Hell",
+    title: "The Dark Knight",
     image: HeavenandHell,
   },
   {
     id: 3,
     category: "web-movie",
-    title: "Terrifier 3",
+    title: "The Godfather 2",
     image: Terrifier3,
   },
   {
     id: 4,
     category: "web-movie",
-    title: "Terrifier 2",
+    title: "The Lord of Rings",
     image: Terrifier2,
   },
   {
     id: 5,
     category: "web-movie",
-    title: "The Crow",
-    image: TheCrow,
+    title: "Forrest Gump",
+    image:ForrestGump,
   },
   {
     id: 6,
     category: "web-movie",
-    title: "It Ends with Us",
-    image: ItEndswithUs,
+    title: "The Green Mile",
+    image: TheGreenMile,
   },
   {
     id: 7,
     category: "web-movie",
-    title: "Speak No Evil",
-    image: SpeakNoEvil,
+    title: "The Good Bad Ugly",
+    image: Thegoodbadugly,
   },
   {
     id: 8,
     category: "web-movie",
-    title: "탈출: 프로젝트 사일런스",
-    image: 탈출프로젝트사일런스,
+    title: "Shindler List",
+    image: ShindlerList,
   },
   {
     id: 9,
     category: "web-movie",
-    title: "Kill 'em All 2",
-    image: KillemAll2,
+    title: "Seven Samrai",
+    image: SevenSamrai,
   },
 ];

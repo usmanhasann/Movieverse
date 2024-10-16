@@ -1,12 +1,12 @@
 import killergame from "../../../public/assets/popularSecCards (1).jpg";
 import HeavenandHell from "../../../public/assets/popularSecCards (10).jpg";
 import Terrifier3 from "../../../public/assets/popularSecCards (20).jpg";
-import Terrifier2 from "../../../public/assets/popularSecCards (7).jpg";
+import theParasite from "../../../public/assets/topratedSecCards (14).jpg";
 import TheCrow from "../../../public/assets/popularSecCards (13).jpg";
 import ItEndswithUs from "../../../public/assets/popularSecCards (2).jpg";
 import SpeakNoEvil from "../../../public/assets/popularSecCards (16).jpg";
 import 탈출프로젝트사일런스 from "../../../public/assets/popularSecCards (9).jpg";
-import KillemAll2 from "../../../public/assets/move (9).jpg";
+import ShawsHank from "../../../public/assets/topratedSecCards (17).jpg";
 export  const popularMovies = [
   {
     id: 1,
@@ -29,8 +29,8 @@ export  const popularMovies = [
   {
     id: 4,
     category: "web-movie",
-    title: "Deadpool & Wolverine",
-    image: Terrifier2,
+    title: "The Parasite",
+    image: theParasite,
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ export  const popularMovies = [
   {
     id: 9,
     category: "web-movie",
-    title: "Kill 'em All 2",
-    image: KillemAll2,
+    title: "The ShawsHank",
+    image: ShawsHank,
   },
 ];

@@ -17,7 +17,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="section-title padd-15">
-              <h2>Netflix</h2>
+              <h2>Comedy/Drama</h2>
             </div>
           </div>
           <div className="row">

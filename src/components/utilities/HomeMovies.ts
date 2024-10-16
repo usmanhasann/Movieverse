@@ -1,18 +1,18 @@
-import TheSubstance from "../../../public/assets/homeSecCards (4).jpg";
+import YourName from "../../../public/assets/topratedSecCards (12).jpg";
 import TheJoker  from "../../../public/assets/homeSecCards (7).jpg";
 import move3 from "../../../public/assets/homeSecCards (21).jpg";
-import move4 from "../../../public/assets/homeSecCards (12).jpg";
+import move4 from "../../../public/assets/topratedSecCards (18).jpg";
 import move5 from "../../../public/assets/homeSecCards (18).jpg";
 import move6 from "../../../public/assets/homeSecCards (9).jpg";
 import move7 from "../../../public/assets/homeSecCards (5).jpg";
-import move8 from "../../../public/assets/homeSecCards (20).jpg";
-import move9 from "../../../public/assets/homeSecCards (3).jpg";
+import move8 from "../../../public/assets/topratedSecCards (6).jpg";
+import move9 from "../../../public/assets/homeSecCards (4).jpg";
 export  const homeMovies = [
   {
     id: 1,
     category: "web-movie",
-    title: "TheSubstance",
-    image: TheSubstance,
+    title: "Your Name",
+    image: YourName,
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ export  const homeMovies = [
   {
     id: 4,
     category: "web-movie",
-    title: "Terrifier 3",
+    title: "Spirited Away",
     image: move4,
   },
   {
@@ -53,13 +53,13 @@ export  const homeMovies = [
   {
     id: 8,
     category: "web-movie",
-    title: "The killer Game",
+    title: "The Grave of the Fireflies",
     image: move8,
   },
   {
     id: 9,
     category: "web-movie",
-    title: "The crow",
+    title: "It ",
     image: move9,
   },
 ];
