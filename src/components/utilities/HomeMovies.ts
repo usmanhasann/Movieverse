@@ -7,6 +7,12 @@ import move6 from "../../../public/assets/homeSecCards (9).jpg";
 import move7 from "../../../public/assets/homeSecCards (5).jpg";
 import move8 from "../../../public/assets/topratedSecCards (6).jpg";
 import move9 from "../../../public/assets/homeSecCards (4).jpg";
+import move10 from "../../../public/assets/homeSecCards (16).jpg";
+import move11 from "../../../public/assets/homeSecCards (14).jpg";
+import move12 from "../../../public/assets/homeSecCards (11).jpg";
+import move13 from "../../../public/assets/homeSecCards (10).jpg";
+import move14 from "../../../public/assets/homeSecCards (23).jpg";
+import move15 from "../../../public/assets/homeSecCards (19).jpg";
 export  const homeMovies = [
   {
     id: 1,
@@ -61,5 +67,41 @@ export  const homeMovies = [
     category: "web-movie",
     title: "It ",
     image: move9,
+  },
+  {
+    id: 10,
+    category: "web-movie",
+    title: "It ",
+    image: move10,
+  },
+  {
+    id: 11,
+    category: "web-movie",
+    title: "It ",
+    image: move11,
+  },
+  {
+    id: 12,
+    category: "web-movie",
+    title: "It ",
+    image: move12,
+  },
+  {
+    id: 13,
+    category: "web-movie",
+    title: "It ",
+    image: move13,
+  },
+  {
+    id: 14,
+    category: "web-movie",
+    title: "It ",
+    image: move14,
+  },
+  {
+    id: 15,
+    category: "web-movie",
+    title: "It ",
+    image: move15,
   },
 ];

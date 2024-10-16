@@ -35,7 +35,7 @@ const Home = () => {
                 className={activeCategory === "web-movie" ? "active" : ""}
                 onClick={() => setActiveCategory("web-movie")}
               >
-                Hollywood
+                Bollywood
               </button>
             </div>
           </div>

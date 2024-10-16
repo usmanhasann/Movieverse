@@ -59,7 +59,7 @@ export  const popularMovies = [
   {
     id: 9,
     category: "web-movie",
-    title: "The ShawsHank",
+    title: "ShawsHank",
     image: ShawsHank,
   },
 ];

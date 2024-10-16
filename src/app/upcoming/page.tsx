@@ -18,7 +18,7 @@ const upcoming = () => {
         <div className="container">
           <div className="row">
             <div className="section-title padd-15">
-              <h2>Upcoming Movies</h2>
+              <h2>Upcoming </h2>
             </div>
           </div>
           <div className="row">
