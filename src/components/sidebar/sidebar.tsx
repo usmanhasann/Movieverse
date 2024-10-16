@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const Sidebar = () => {
+  //false def-close
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -14,73 +14,34 @@ const Sidebar = () => {
     setOpen(false);
   };
 
-  const pathUrl = usePathname();
-
   return (
     <aside className={`aside ${open ? "open" : ""}`}>
-      <div onClick={handleOpen} className="nav-toggler">
-        <span />
-      </div>
       <div className="aside-inner">
         <div className="logo">
-          <Link href="/" onClick={handleClose}>
-            MOBEEN
-          </Link>
+          <Link href="/">Movieverse</Link>
         </div>
         <ul className="nav">
-          <li onClick={handleClose}>
-            <Link href="/" className={`${pathUrl == "/" && "active"}`}>
-              <i className="fa fa-home" /> Home
+          <li>
+            <Link href="/">
+              <a /> Home
             </Link>
           </li>
-          <li onClick={handleClose}>
-            <Link
-              href="/about"
-              className={`${pathUrl == "/about" && "active"}`}
-            >
-              <i className="fa fa-user" /> About
+          <li>
+            <Link href="/Popular">
+              <a /> Popular
             </Link>
           </li>
-          <li onClick={handleClose}>
-            <Link
-              href="/services"
-              className={`${pathUrl == "/services" && "active"}`}
-            >
-              <i className="fa fa-list" /> Services
+          <li>
+            <Link href="/toprated">
+              <a /> toprated
             </Link>
           </li>
-          <li onClick={handleClose}>
-            <Link
-              href="/portfolio"
-              className={`${pathUrl == "/portfolio" && "active"}`}
-            >
-              <i className="fa fa-briefcase" /> Portfolio
-            </Link>
-          </li>
-          <li onClick={handleClose}>
-            <Link href="/blog" className={`${pathUrl == "/blog" && "active"}`}>
-              <i className="fa fa-envelope" /> Blog
-            </Link>
-          </li>
-          <li onClick={handleClose}>
-            <Link
-              href="/contact"
-              className={`${pathUrl == "/contact" && "active"}`}
-            >
-              <i className="fa fa-comments" /> Contact
+          <li>
+            <Link href="/upcoming">
+              <a /> Upcoming
             </Link>
           </li>
         </ul>
-        <div className="copyright">
-          Created By{" "}
-          <a
-            href="https://github.com/MobeenKhan221"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mobeen Ahmad
-          </a>
-        </div>
       </div>
     </aside>
   );

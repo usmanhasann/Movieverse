@@ -1,15 +1,15 @@
 "use client";
 import { useState } from "react";
-import { homeMovies } from "@/components/utilities/HomeMovies";
 import MovieCard from "@/components/MovieCard";
-const Home = () => {
+import { popularMovies } from "@/components/utilities/PopularMovies";
+const Popular = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   // Movies list
   const filteredItems =
     activeCategory === "all"
-      ? homeMovies
-      : homeMovies.filter((item) => item.category === activeCategory);
+      ? popularMovies
+      : popularMovies.filter((item) => item.category === activeCategory);
 
   return (
     <div>
@@ -92,4 +92,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Popular;

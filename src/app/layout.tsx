@@ -12,8 +12,8 @@ import ThemeSwitch from "@/components/panel/ThemeSwitch";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mobeen Ahmad | Personal Website",
-  description: "This is my Personal PortFolio Website.",
+  title: "Movieverse| MovieWeb",
+  description: "This is a collection of Movies you can watch.",
 };
 
 export default function RootLayout({
