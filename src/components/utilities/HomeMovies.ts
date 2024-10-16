@@ -1,65 +1,65 @@
-import killergame from "../../../public/assets/move (1).jpg";
-import HeavenandHell from "../../../public/assets/move (2).jpg";
-import Terrifier3 from "../../../public/assets/move (3).jpg";
-import Terrifier2 from "../../../public/assets/move (4).jpg";
-import TheCrow from "../../../public/assets/move (5).jpg";
-import ItEndswithUs from "../../../public/assets/move (6).jpg";
-import SpeakNoEvil from "../../../public/assets/move (7).jpg";
-import 탈출프로젝트사일런스 from "../../../public/assets/move (8).jpg";
-import KillemAll2 from "../../../public/assets/move (9).jpg";
+import TheSubstance from "../../../public/assets/homeSecCards (4).jpg";
+import TheJoker  from "../../../public/assets/homeSecCards (7).jpg";
+import move3 from "../../../public/assets/homeSecCards (21).jpg";
+import move4 from "../../../public/assets/homeSecCards (12).jpg";
+import move5 from "../../../public/assets/homeSecCards (18).jpg";
+import move6 from "../../../public/assets/homeSecCards (9).jpg";
+import move7 from "../../../public/assets/homeSecCards (5).jpg";
+import move8 from "../../../public/assets/homeSecCards (20).jpg";
+import move9 from "../../../public/assets/homeSecCards (3).jpg";
 export  const homeMovies = [
   {
     id: 1,
     category: "web-movie",
-    title: "Killer Game",
-    image: killergame,
+    title: "TheSubstance",
+    image: TheSubstance,
   },
   {
     id: 2,
     category: "web-movie",
-    title: "Heaven'nd Hell",
-    image: HeavenandHell,
+    title: " The Joker",
+    image: TheJoker,
   },
   {
     id: 3,
     category: "web-movie",
-    title: "Terrifier 3",
-    image: Terrifier3,
+    title: " El hoyo 2",
+    image: move3,
   },
   {
     id: 4,
     category: "web-movie",
-    title: "Terrifier 2",
-    image: Terrifier2,
+    title: "Terrifier 3",
+    image: move4,
   },
   {
     id: 5,
     category: "web-movie",
-    title: "The Crow",
-    image: TheCrow,
+    title: "The Wild Robot",
+    image: move5,
   },
   {
     id: 6,
     category: "web-movie",
-    title: "It Ends with Us",
-    image: ItEndswithUs,
+    title: "Hellboy: The Crooked Man",
+    image: move6,
   },
   {
     id: 7,
     category: "web-movie",
-    title: "Speak No Evil",
-    image: SpeakNoEvil,
+    title: "Project Silence",
+    image: move7,
   },
   {
     id: 8,
     category: "web-movie",
-    title: "탈출: 프로젝트 사일런스",
-    image: 탈출프로젝트사일런스,
+    title: "The killer Game",
+    image: move8,
   },
   {
     id: 9,
     category: "web-movie",
-    title: "Kill 'em All 2",
-    image: KillemAll2,
+    title: "The crow",
+    image: move9,
   },
 ];

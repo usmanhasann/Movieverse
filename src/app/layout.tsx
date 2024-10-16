@@ -14,6 +14,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Movieverse| MovieWeb",
   description: "This is a collection of Movies you can watch.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

@@ -17,7 +17,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="section-title padd-15">
-              <h2>Upcoming Movies</h2>
+              <h2>Netflix</h2>
             </div>
           </div>
           <div className="row">
@@ -29,27 +29,13 @@ const Home = () => {
               >
                 All
               </button>
-              <button
-                type="button"
-                className={activeCategory === "graphics-movie" ? "active" : ""}
-                onClick={() => setActiveCategory("graphics-movie")}
-              >
-                Trending
-              </button>
+
               <button
                 type="button"
                 className={activeCategory === "web-movie" ? "active" : ""}
                 onClick={() => setActiveCategory("web-movie")}
               >
                 Hollywood
-              </button>
-
-              <button
-                type="button"
-                className={activeCategory === "nextjs" ? "active" : ""}
-                onClick={() => setActiveCategory("nextjs")}
-              >
-                Recently Watched
               </button>
             </div>
           </div>
