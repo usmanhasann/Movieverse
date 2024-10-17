@@ -10,7 +10,7 @@ import SevenSamrai from "../../../public/assets/topratedSecCards (15).jpg";
 export  const topRatedMovies = [
   {
     id: 1,
-    category: "web-movie",
+    category: "The 90,s",
     title: "The Godfather ",
     image: killergame,
   },
@@ -22,7 +22,7 @@ export  const topRatedMovies = [
   },
   {
     id: 3,
-    category: "web-movie",
+    category: "The 90,s",
     title: "The Godfather 2",
     image: Terrifier3,
   },
@@ -46,7 +46,7 @@ export  const topRatedMovies = [
   },
   {
     id: 7,
-    category: "web-movie",
+    category: "The 90,s",
     title: "The Good Bad Ugly",
     image: Thegoodbadugly,
   },

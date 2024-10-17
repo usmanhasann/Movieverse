@@ -22,7 +22,7 @@ export  const popularMovies = [
   },
   {
     id: 3,
-    category: "web-movie",
+    category: "CN Network",
     title: "Transmorphers: Mech Beasts",
     image: Terrifier3,
   },
@@ -40,7 +40,7 @@ export  const popularMovies = [
   },
   {
     id: 6,
-    category: "web-movie",
+    category: "CN Network",
     title: "Inside Out 2",
     image: ItEndswithUs,
   },

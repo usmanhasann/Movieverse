@@ -16,7 +16,7 @@ import move15 from "../../../public/assets/homeSecCards (19).jpg";
 export  const homeMovies = [
   {
     id: 1,
-    category: "web-movie",
+    category: "Bolly",
     title: "Your Name",
     image: YourName,
   },
@@ -34,13 +34,13 @@ export  const homeMovies = [
   },
   {
     id: 4,
-    category: "web-movie",
+    category: "Bolly",
     title: "Spirited Away",
     image: move4,
   },
   {
     id: 5,
-    category: "web-movie",
+    category: "Bolly",
     title: "The Wild Robot",
     image: move5,
   },
@@ -58,7 +58,7 @@ export  const homeMovies = [
   },
   {
     id: 8,
-    category: "web-movie",
+    category: "Bolly",
     title: "The Grave of the Fireflies",
     image: move8,
   },
@@ -76,13 +76,13 @@ export  const homeMovies = [
   },
   {
     id: 11,
-    category: "web-movie",
+    category: "Bolly",
     title: "It ",
     image: move11,
   },
   {
     id: 12,
-    category: "web-movie",
+    category: "Bolly",
     title: "It ",
     image: move12,
   },

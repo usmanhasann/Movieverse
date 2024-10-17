@@ -32,10 +32,10 @@ const Popular = () => {
 
               <button
                 type="button"
-                className={activeCategory === "web-movie" ? "active" : ""}
-                onClick={() => setActiveCategory("web-movie")}
+                className={activeCategory === "CN Network" ? "active" : ""}
+                onClick={() => setActiveCategory("CN Network")}
               >
-                Hollywood
+                CN Network
               </button>
             </div>
           </div>
@@ -54,26 +54,6 @@ const Popular = () => {
           </div>
         </div>
       </section>
-
-      <style jsx>{`
-        .coming-soon {
-          text-align: center;
-          color: #ff6347;
-          font-style: italic;
-          padding: 50px 0;
-          background-color: #f0f0f0;
-          border-radius: 10px;
-        }
-
-        .coming-soon h3 {
-          font-size: 2rem;
-          margin-bottom: 10px;
-        }
-
-        .coming-soon p {
-          font-size: 1.2rem;
-        }
-      `}</style>
     </div>
   );
 };

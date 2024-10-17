@@ -33,10 +33,10 @@ const upcoming = () => {
 
               <button
                 type="button"
-                className={activeCategory === "web-movie" ? "active" : ""}
-                onClick={() => setActiveCategory("web-movie")}
+                className={activeCategory === "Survival" ? "active" : ""}
+                onClick={() => setActiveCategory("Survival")}
               >
-                Hollywood
+                Survival
               </button>
             </div>
           </div>

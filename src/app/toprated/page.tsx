@@ -18,7 +18,7 @@ const toprated = () => {
         <div className="container">
           <div className="row">
             <div className="section-title padd-15">
-              <h2>Prime video</h2>
+              <h2>All Time</h2>
             </div>
           </div>
           <div className="row">
@@ -33,10 +33,10 @@ const toprated = () => {
 
               <button
                 type="button"
-                className={activeCategory === "web-movie" ? "active" : ""}
-                onClick={() => setActiveCategory("web-movie")}
+                className={activeCategory === "The 90,s" ? "active" : ""}
+                onClick={() => setActiveCategory("The 90,s")}
               >
-                Hollywood
+                The 90's
               </button>
             </div>
           </div>
